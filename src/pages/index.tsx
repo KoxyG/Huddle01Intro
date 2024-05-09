@@ -15,6 +15,7 @@ export const getServerSideProps = async () => {
   });
 
   const data = await response.json();
+  console.log("data", data)
 
   const roomId = data.data.roomId;
 
